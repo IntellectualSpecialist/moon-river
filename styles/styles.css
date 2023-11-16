@@ -523,7 +523,7 @@ body {
 .social-media .social-list {
   position: absolute;
   bottom: 0;
-  left: 192px;
+  left: 162px;
   max-width: 500px;
 }
 
@@ -567,7 +567,7 @@ body {
 }
 
 .main-footer {
-  padding: 76px 0 90px;
+  padding: 76px 0 80px;
   color: #c2c2c2;
   background-color: #272727;
 }
@@ -660,8 +660,6 @@ body {
   align-items: center;
 }
 
-.footer-store-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-store-logo {
+  display: block;
 }
