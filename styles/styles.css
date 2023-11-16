@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/futurapt-light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/futurapt-book.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  src: url("../fonts/futurapt-medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/futurapt-demi.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/segoeui-lightitalic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/segoeui-regularitalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/forum-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1440px;
+  margin: 0;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #272727;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+h1.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-center {
+  width: 1115px;
+  margin: 0 auto;
+}
+
+.container-center-second {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.main-header,
+.hero {
+  background-image: linear-gradient(to right, #ffffff, #ffffff 60%, #272727 60%, #272727);
+}
+
+.main-header {
+  padding: 60px 0;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-logo-img {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-link,
+.menu-burger-button {
+  display: block;
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: 0.96px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #272727;
+}
+
+.user-navigation-link {
+  padding: 10px 20px;
+}
+
+.cart-counter {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.menu-burger-button {
+  margin-left: 40px;
+  padding: 10px 20px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.hero {
+  padding: 254px 0 60px;
+}
+
+.hero .container-center {
+  display: grid;
+  grid-template-columns: 475px 547px;
+  grid-template-rows: 1fr;
+  column-gap: 94px;
+  min-height: 537px;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  margin: 0;
+  margin-top: 12px;
+  font-family: "Forum", serif;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 1.92px;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+.hero-produсt {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-more-link {
+  font-family: "Segoe UI", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #272727;
+  text-decoration: none;
+}
+
+.hero-product-description {
+  text-align: right;
+}
+
+.product-card-title {
+  font-family: "Futura PT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+.product-card-materials {
+  color: #757575;
+}
+
+.product-card-price {
+  font-family: "Segoe UI", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  color: #e2b67a;
+}
+
+.hero-produсt .product-card-title {
+  color: #ffffff;
+}
+
+.hero-produсt .product-card-materials {
+  color: #c2c2c2;
+}
+
+.hero-produсt .product-card-price {
+  font-weight: 300;
+  color: #efc58b;
+}
+
+.language-menu-link {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  color: #c4c4c4;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.language-menu-current {
+  color: #272727;
+}
+
+.catalog-menu-column {
+  background-color: #272727;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.male-catalog {
+  background-image: url("../images/male-background.jpg");
+}
+
+.female-catalog {
+  background-image: url("../images/female-background.jpg");
+}
+
+.catalog-menu-link {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.catalog-menu-gender {
+  font-family: "Forum", serif;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 1.92px;
+}
+
+.search {
+  color: #ffffff;
+  background-color: #272727;
+}
+
+.search-title {
+  font-family: "Forum", serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+}
+
+.field {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.40);
+}
+
+.field::placeholder {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.40);
+}
+
+.light-theme .product-card-title {
+  color: #ffffff;
+}
+
+.light-theme .product-card-materials {
+  color: #e7e7e7;
+}
+
+.light-theme .product-card-price {
+  color: #efc58b;
+}
+
+.social-media {
+  color: #ffffff;
+  background-color: #272727;
+}
+
+.social-media-title {
+  font-family: "Forum", serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+}
+
+.contacts {
+  background-image: url("../images/contacts-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.contacts-subtitle {
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.tel-link,
+.subscribe-field,
+.subscribe-field::placeholder {
+  font-size: 22px;
+  color: #959595;
+  text-decoration: none;
+}
+
+.main-footer {
+  color: #c2c2c2;
+  background-color: #272727;
+}
+
+.footer-navigation-link {
+  font-size: 14px;
+  font-weight: 450;
+  color: #ffffff;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
