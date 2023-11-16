@@ -92,7 +92,7 @@ body {
 
 .main-header,
 .hero {
-  background-image: linear-gradient(to right, #ffffff, #ffffff 58%, #272727 58%, #272727);
+  background-image: linear-gradient(to right, transparent, transparent 58%, #272727 58%, #272727);
 }
 
 .main-header {
