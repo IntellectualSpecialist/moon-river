@@ -410,11 +410,22 @@ body {
   margin-bottom: 60px;
 }
 
+.form {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ffffff;
+}
+
 .field {
+  box-sizing: border-box;
+  width: 358px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.40);
+  background-color: transparent;
+  border: none;
 }
 
 .field::placeholder {
@@ -422,6 +433,19 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.40);
+}
+
+.form-button {
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../images/arrow-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
 }
 
 .search-map {
@@ -617,6 +641,20 @@ body {
   text-decoration: none;
 }
 
+.subscribe-form {
+  width: 281px;
+  padding-bottom: 2px;
+  border-bottom-color: #272727;
+}
+
+.subscribe-field {
+  width: 250px;
+}
+
+.subscribe-button {
+  background-image: url("../images/arrow-button-dark.svg");
+}
+
 .main-footer {
   padding: 76px 0 80px;
   color: #c2c2c2;
@@ -664,6 +702,10 @@ body {
   list-style: none;
 }
 
+.footer-contacts-item {
+  margin-bottom: 15px;
+}
+
 .footer-title {
   margin: 0;
   margin-bottom: 15px;
@@ -683,15 +725,16 @@ body {
   margin-left: 80px;
 }
 
-.footer-contacts-item {
-  margin-bottom: 15px;
-}
-
 .footer-subscribe {
   margin-bottom: 12px;
 }
 
-.main-footer .field {
+.footer-subscribe-form {
+  width: 280px;
+}
+
+.footer-subscribe-field {
+  width: 250px;
   font-size: 18px;
 }
 
