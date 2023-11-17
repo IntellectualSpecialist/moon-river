@@ -69,6 +69,11 @@ body {
   color: #272727;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -115,6 +120,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -524,11 +530,11 @@ body {
 .slider-images-list {
   display: flex;
   gap: 25px;
+  width: 25000px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
   list-style: none;
-  transform: translateX(-168px);
 }
 
 .slider-image {
@@ -716,7 +722,7 @@ body {
   text-transform: uppercase;
 }
 
-.main-footer .tel-link {
+.footer-tel-link {
   font-size: 18px;
 }
 
@@ -756,4 +762,234 @@ body {
 
 .footer-store-logo {
   display: block;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 1024px;
+  color: #ffffff;
+  background-color: #272727;
+}
+
+.popover-shown {
+  display: block;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-header {
+  padding: 40px 0;
+}
+
+.popover-close-button {
+  position: relative;
+  width: 23px;
+  height: 53px;
+  margin-left: 55px;
+}
+
+.popover-close-button::before,
+.popover-close-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.popover-close-button::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.site-navigation {
+  margin-bottom: 70px;
+  background-color: #2f2f2f;
+}
+
+.site-navigation-list {
+  gap: 50px;
+  background: transparent;
+}
+
+.site-navigation-link {
+  padding: 27px 0;
+}
+
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+.navigation-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.for-who {
+  width: 100px;
+}
+
+.category {
+  width: 95px;
+}
+
+.material {
+  width: 132px;
+}
+
+.brand {
+  width: 154px;
+}
+
+.navigation-topic-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.popover-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand .popover-navigation {
+  margin-bottom: 15px;
+}
+
+.popover-navigation-item {
+  margin-bottom: 15px;
+}
+
+.popover-navigation-item:last-child {
+  margin-bottom: 0;
+}
+
+.popover-navigation-link {
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.08px;
+  text-decoration: none;
+}
+
+.more-brands {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  color: #efc58b;
+  text-decoration: none;
+}
+
+.popover-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 85px;
+  padding: 66px 0 76px;
+  border-top: 2px solid #2f2f2f;
+}
+
+.popover-footer-banner {
+  position: relative;
+  box-sizing: border-box;
+  width: 749px;
+  padding: 30px;
+  background-color: #272727;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.popover-footer-banner::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(39, 39, 39, 0.50);
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 208px;
+  font-weight: 400;
+  letter-spacing: 1.08px;
+}
+
+.banner-content-title {
+  align-self: center;
+  margin: 0;
+  font-family: "Forum", serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+.banner-content-description {
+  margin: 0;
+  order: -1;
+}
+
+.banner-content-link {
+  position: relative;
+  align-self: flex-end;
+  min-width: 224px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banner-content-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  display: block;
+  width: 31px;
+  height: 17px;
+  background-image: url("../images/arrow-button.svg");
+  transform: translateY(-50%);
+}
+
+
+.popover .footer-contacts-list {
+  margin-bottom: 48px;
 }
