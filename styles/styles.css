@@ -133,17 +133,56 @@ body {
 }
 
 .user-navigation-link {
+  display: block;
+  min-width: 56px;
+  min-height: 53px;
+  box-sizing: border-box;
   padding: 15px 20px;
+  background-image: url("../images/favorite-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sign-in {
+  background-image: url("../images/sign-in-icon.svg");
+}
+
+.cart {
+  position: relative;
+  background-image: url("../images/cart-icon.svg");
 }
 
 .cart-counter {
+  position: absolute;
+  right: 0;
   font-size: 18px;
   font-weight: 300;
 }
 
 .menu-burger-button {
-  margin-left: 40px;
-  padding: 15px 20px;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  margin-left: 78px;
+  margin-top: 25px;
+  background-color: #ffffff;
+}
+
+.menu-burger-button::before,
+.menu-burger-button::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 6px;
+  background-color: #ffffff;
+}
+
+.menu-burger-button::after {
+  top: 100%;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 .main-container {
@@ -161,6 +200,11 @@ body {
   grid-template-rows: 1fr;
   column-gap: 94px;
   min-height: 537px;
+}
+
+.hero-column-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-title {
@@ -182,7 +226,8 @@ body {
 
 .hero-more-link {
   position: relative;
-  display: block;
+  align-self: flex-end;
+  max-width: 306px;
   font-family: "Segoe UI", sans-serif;
   font-style: italic;
   font-weight: 300;
@@ -194,10 +239,11 @@ body {
 .hero-more-link::before {
   content: "";
   position: absolute;
-  right: 216px;
+  right: 100%;
   top: 15px;
   width: 130px;
   height: 1px;
+  margin-right: 38px;
   background-color: #272727;
 }
 
