@@ -160,9 +160,12 @@ img {
 
 .cart-counter {
   position: absolute;
-  right: 0;
+  left: 100%;
+  min-width: 20px;
+  max-width: 25px;
   font-size: 18px;
   font-weight: 300;
+  transform: translateX(-50%);
 }
 
 .menu-burger-button {
@@ -972,7 +975,9 @@ img {
 .banner-content-link {
   position: relative;
   align-self: flex-end;
+  box-sizing: border-box;
   min-width: 224px;
+  padding-right: 30px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -986,6 +991,8 @@ img {
   width: 31px;
   height: 17px;
   background-image: url("../images/arrow-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   transform: translateY(-50%);
 }
 
