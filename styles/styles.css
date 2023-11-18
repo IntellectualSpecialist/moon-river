@@ -539,11 +539,15 @@ img {
 .slider-images-list {
   display: flex;
   gap: 25px;
-  width: 25000px;
+  min-width: 1775px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
   list-style: none;
+}
+
+.slider-list-item {
+  flex-shrink: 0;
 }
 
 .slider-image {
