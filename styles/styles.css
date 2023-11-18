@@ -107,6 +107,7 @@ img {
 .main-nav {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -262,6 +263,7 @@ img {
 }
 
 .hero-product-description {
+  align-self: flex-end;
   text-align: right;
 }
 
@@ -292,15 +294,18 @@ img {
 
 .hero-produсt .product-card-title {
   color: #ffffff;
+  background-color: #272727;
 }
 
 .hero-produсt .product-card-materials {
   color: #c2c2c2;
+  background-color: #272727;
 }
 
 .hero-produсt .product-card-price {
   font-weight: 300;
   color: #efc58b;
+  background-color: #272727;
 }
 
 .language-menu {
