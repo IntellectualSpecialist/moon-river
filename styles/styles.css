@@ -776,11 +776,12 @@ img {
 .popover {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
   display: none;
   box-sizing: border-box;
   width: 100%;
+  min-width: 1440px;
   min-height: 1024px;
   color: #ffffff;
   background-color: #272727;
