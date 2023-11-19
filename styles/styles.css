@@ -150,6 +150,15 @@ img {
   background-position: center;
 }
 
+.user-navigation-link:hover,
+.user-navigation-link:focus {
+  opacity: 0.6;
+}
+
+.user-navigation-link:active {
+  opacity: 0.3;
+}
+
 .sign-in {
   background-image: url("../images/sign-in-icon.svg");
 }
@@ -192,12 +201,33 @@ img {
   height: 2px;
   margin-bottom: 6px;
   background-color: #ffffff;
+  transition: transform 0.3s ease;
 }
 
 .burger-icon::after {
   top: 100%;
   margin-top: 6px;
   margin-bottom: 0;
+}
+
+.menu-burger-button:hover .burger-icon::before,
+.menu-burger-button:focus .burger-icon::before {
+  transform: translateY(-4px);
+}
+
+.menu-burger-button:hover .burger-icon::after,
+.menu-burger-button:focus .burger-icon::after {
+  transform: translateY(4px);
+}
+.menu-burger-button:active {
+  opacity: 0.6;
+}
+
+.menu-burger-button:active .burger-icon::before {
+  transform: translateY(-4px);
+}
+.menu-burger-button:active .burger-icon::after {
+  transform: translateY(4px);
 }
 
 .main-container {
@@ -249,6 +279,15 @@ img {
   color: #272727;
   text-decoration: none;
   text-align: right;
+}
+
+.hero-more-link:hover,
+.hero-more-link:focus {
+  color: #e2b67a;
+}
+
+.hero-more-link:active {
+  color: rgba(38, 38, 38, 0.3);
 }
 
 .hero-more-link::before {
@@ -325,6 +364,15 @@ img {
   text-decoration: none;
 }
 
+.language-menu-link:not(.language-menu-current):hover,
+.language-menu-link:not(.language-menu-current):focus {
+  color: #e2b67a;
+}
+
+.language-menu-link:not(.language-menu-current):active {
+  opacity: 0.3;
+}
+
 .language-menu-current {
   color: #272727;
 }
@@ -372,6 +420,15 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+}
+
+.catalog-menu-link:hover,
+.catalog-menu-link:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-menu-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-menu-link::after {
@@ -447,6 +504,11 @@ img {
   font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.40);
+}
+
+.field:focus:invalid {
+  border-top: 1px solid #f88c6b;
+  outline: none;
 }
 
 .form-button {
@@ -586,6 +648,15 @@ img {
   border-radius: 50%;
 }
 
+.slider-pagination-button:not(.slider-arrows):hover,
+.slider-pagination-button:not(.slider-arrows):focus {
+  background-color: #e2b67a;
+}
+
+.slider-pagination-button:not(.slider-arrows):active {
+  opacity: 0.6;
+}
+
 .slider-button-active {
   background-color: #ffffff;
   box-shadow: 0 0 0 2px #ffffff;
@@ -599,6 +670,15 @@ img {
   background-image: url("../images/slider-next.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.slider-arrows:hover,
+.slider-arrows:focus {
+  opacity: 0.6;
+}
+
+.slider-arrows:active {
+  opacity: 0.3;
 }
 
 .slider-prev {
@@ -627,9 +707,26 @@ img {
   height: 35px;
 }
 
+.social-link-icon {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  fill: #ffffff;
+}
+
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
+  transform: scale(0.8);
+  fill: #e2b67a;
+}
+
+.social-link:active .social-link-icon {
+  opacity: 0.3;
+}
+
 .contacts {
   background-image: url("../images/contacts-background.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contacts .tel {
@@ -639,8 +736,9 @@ img {
 .contacts-container {
   box-sizing: border-box;
   width: 731px;
+  min-height: 640px;
   margin-left: auto;
-  padding: 180px 208px 180px 183px;
+  padding: 179px 208px 180px 183px;
 }
 
 .contacts-subtitle {
@@ -658,6 +756,15 @@ img {
   font-size: 22px;
   color: #959595;
   text-decoration: none;
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  color: #e2b67a;
+}
+
+.tel-link:active {
+  opacity: 0.6;
 }
 
 .subscribe-form {
@@ -828,6 +935,15 @@ img {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+.popover-close-button:hover,
+.popover-close-button:focus {
+  opacity: 0.6;
+}
+
+.popover-close-button:active {
+  opacity: 0.3;
+}
+
 .site-navigation {
   margin-bottom: 70px;
   background-color: #2f2f2f;
@@ -839,11 +955,8 @@ img {
 }
 
 .site-navigation-link {
-  padding: 27px 0;
-}
-
-.navigation-link-current {
   position: relative;
+  padding: 27px 0;
 }
 
 .navigation-link-current::after {
@@ -856,6 +969,30 @@ img {
   height: 2px;
   background-color: #ffffff;
   border-radius: 1px;
+}
+
+.site-navigation-link:not(.navigation-link-current)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2b67a;
+  border-radius: 1px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease;
+}
+
+.site-navigation-link:not(.navigation-link-current):hover::after,
+.site-navigation-link:not(.navigation-link-current):focus::after {
+  transform: scale(1);
+}
+
+.site-navigation-link:active {
+  opacity: 0.6;
 }
 
 .navigation-topics {
@@ -912,19 +1049,69 @@ img {
 }
 
 .popover-navigation-link {
+  position: relative;
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 1.08px;
   text-decoration: none;
 }
 
+.popover-navigation-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e2b67a;
+  border-radius: 1px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease;
+}
+
+.popover-navigation-link:hover::after,
+.popover-navigation-link:focus::after {
+  transform: scale(1);
+}
+
+.popover-navigation-link:active {
+  opacity: 0.6;
+}
+
 .more-brands {
+  position: relative;
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
   color: #efc58b;
   text-decoration: none;
+}
+
+.more-brands::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e2b67a;
+  border-radius: 1px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease;
+}
+
+.more-brands:hover::after,
+.more-brands:focus::after {
+  transform: scale(1);
+}
+
+.more-brands:active {
+  opacity: 0.6;
 }
 
 .popover-footer {
@@ -1005,6 +1192,16 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.banner-content-link:hover::after,
+.banner-content-link:focus::after {
+  transform: translateY(-50%) translateX(5px);
+}
+
+.banner-content-link:active {
+  opacity: 0.6;
 }
 
 .popover .footer-contacts-list {
