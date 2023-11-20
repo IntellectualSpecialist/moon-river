@@ -592,6 +592,15 @@ img {
   background-color: #ededed;
 }
 
+.product-card-link:hover,
+.product-card-link:focus {
+  opacity: 0.6;
+}
+
+.product-card-link:active {
+  opacity: 0.3;
+}
+
 .product-card-img {
   display: block;
 }
