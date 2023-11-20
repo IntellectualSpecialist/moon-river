@@ -312,6 +312,7 @@ img {
 
 .hero-product-description {
   align-self: flex-end;
+  max-width: 400px;
   text-align: right;
 }
 
@@ -764,7 +765,6 @@ img {
 .contacts {
   background-image: url("../images/contacts-background.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .contacts .tel {
@@ -1283,6 +1283,10 @@ img {
 
 .banner-content-link:active {
   opacity: 0.6;
+}
+
+.footer-info {
+  width: 280px;
 }
 
 .popover .footer-contacts-list {
