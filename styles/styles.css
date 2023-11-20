@@ -287,7 +287,7 @@ img {
 }
 
 .hero-more-link:active {
-  color: rgba(38, 38, 38, 0.3);
+  color: rgba(227, 183, 122, 0.6);
 }
 
 .hero-more-link::before {
@@ -469,7 +469,7 @@ img {
 
 .search-title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   font-family: "Forum", serif;
   font-size: 48px;
   font-weight: 400;
@@ -497,6 +497,7 @@ img {
   color: rgba(255, 255, 255, 0.40);
   background-color: transparent;
   border: none;
+  border-top: 1px solid transparent;
 }
 
 .field::placeholder {
@@ -506,8 +507,19 @@ img {
   color: rgba(255, 255, 255, 0.40);
 }
 
+.field:hover,
+.field:focus {
+  border-color: rgba(255, 255, 255, 0.40);
+}
+
+.field:disabled,
+.field:disabled:hover {
+  background-color: rgba(255, 255, 255, 0.40);
+  border-top: 1px solid transparent;
+}
+
 .field:focus:invalid {
-  border-top: 1px solid #f88c6b;
+  border-color: #f88c6b;
   outline: none;
 }
 
@@ -522,6 +534,23 @@ img {
   background-position: center;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.form-button:hover,
+.form-button:focus {
+  transform: translateX(5px);
+}
+
+.form-button:active{
+  opacity: 0.6;
+}
+
+.form-button:disabled,
+.form-button:disabled:hover {
+  transform: none;
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .search-map {
@@ -736,14 +765,13 @@ img {
 .contacts-container {
   box-sizing: border-box;
   width: 731px;
-  min-height: 640px;
   margin-left: auto;
-  padding: 179px 208px 180px 183px;
+  padding: 181px 208px 180px 183px;
 }
 
 .contacts-subtitle {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.9px;
@@ -777,6 +805,17 @@ img {
   width: 250px;
 }
 
+.subscribe-field:hover,
+.subscribe-field:focus {
+  border-color: #272727;
+}
+
+.subscribe-field:disabled,
+.subscribe-field:hover:disabled {
+  background-color: rgba(38, 38, 38, 0.3);
+  border-color: transparent;
+}
+
 .subscribe-button {
   background-image: url("../images/arrow-button-dark.svg");
 }
@@ -804,12 +843,37 @@ img {
 }
 
 .footer-navigation-link {
+  position: relative;
   font-size: 14px;
   font-weight: 450;
   color: #ffffff;
   letter-spacing: 0.84px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.footer-navigation-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e2b67a;
+  border-radius: 1px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease;
+}
+
+.footer-navigation-link:hover::after,
+.footer-navigation-link:focus::after {
+  transform: scale(1);
+}
+
+.footer-navigation-link:active {
+  opacity: 0.6;
 }
 
 .footer-logo {
@@ -834,7 +898,7 @@ img {
 
 .footer-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
@@ -878,6 +942,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-store-link:hover,
+.footer-store-link:focus {
+  opacity: 0.6;
+}
+
+.footer-store-link:active {
+  opacity: 0.3;
 }
 
 .footer-store-logo {
