@@ -129,6 +129,12 @@ img {
   background-color: #272727;
 }
 
+.user-navigation {
+  flex-wrap: wrap;
+  max-width: 297px;
+  justify-content: flex-end;
+}
+
 .navigation-link,
 .menu-burger-button {
   display: block;
