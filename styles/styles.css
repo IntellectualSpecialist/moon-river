@@ -1023,7 +1023,7 @@ img {
 }
 
 .site-navigation-list {
-  gap: 50px;
+  column-gap: 50px;
   background: transparent;
 }
 
@@ -1190,8 +1190,8 @@ img {
 .popover-footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 85px;
-  padding: 66px 0 76px;
+  justify-content: space-between;
+  padding: 66px 0px 76px 2px;
   border-top: 2px solid #2f2f2f;
 }
 
@@ -1256,7 +1256,7 @@ img {
 .banner-content-link::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 4px;
   right: -3px;
   display: block;
   width: 31px;
@@ -1264,13 +1264,12 @@ img {
   background-image: url("../images/arrow-button.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transform: translateY(-50%);
   transition: transform 0.3s ease;
 }
 
 .banner-content-link:hover::after,
 .banner-content-link:focus::after {
-  transform: translateY(-50%) translateX(5px);
+  transform: translateX(5px);
 }
 
 .banner-content-link:active {
