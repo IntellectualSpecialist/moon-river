@@ -8,6 +8,8 @@ menuButton.onclick = function (evt) {
   popover.classList.add('popover-shown');
 }
 
-popoverCloseButton.onclick = function () {
+popoverCloseButton.onclick = function (evt) {
+  evt.preventDefault();
+
   popover.classList.remove('popover-shown');
 }
