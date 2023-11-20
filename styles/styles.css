@@ -37,6 +37,7 @@
   src: url("../fonts/segoeui-lightitalic.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Segoe UI";
   font-style: italic;
@@ -219,6 +220,7 @@ img {
 .menu-burger-button:focus .burger-icon::after {
   transform: translateY(4px);
 }
+
 .menu-burger-button:active {
   opacity: 0.6;
 }
@@ -226,6 +228,7 @@ img {
 .menu-burger-button:active .burger-icon::before {
   transform: translateY(-4px);
 }
+
 .menu-burger-button:active .burger-icon::after {
   transform: translateY(4px);
 }
@@ -494,7 +497,7 @@ img {
   font-family: inherit;
   font-size: 18px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.40);
+  color: rgba(255, 255, 255, 0.4);
   background-color: transparent;
   border: none;
   border-top: 1px solid transparent;
@@ -504,17 +507,17 @@ img {
   font-family: inherit;
   font-size: 18px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.40);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .field:hover,
 .field:focus {
-  border-color: rgba(255, 255, 255, 0.40);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .field:disabled,
 .field:disabled:hover {
-  background-color: rgba(255, 255, 255, 0.40);
+  background-color: rgba(255, 255, 255, 0.4);
   border-top: 1px solid transparent;
 }
 
@@ -542,7 +545,7 @@ img {
   transform: translateX(5px);
 }
 
-.form-button:active{
+.form-button:active {
   opacity: 0.6;
 }
 
@@ -609,7 +612,7 @@ img {
   background-color: #272727;
 }
 
-.social-media .container-center-second{
+.social-media .container-center-second {
   position: relative;
 }
 
@@ -1191,7 +1194,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 66px 0px 76px 2px;
+  padding: 66px 0 76px 2px;
   border-top: 2px solid #2f2f2f;
 }
 
@@ -1208,13 +1211,13 @@ img {
 }
 
 .popover-footer-banner::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(39, 39, 39, 0.50);
+  background-color: rgba(39, 39, 39, 0.5);
 }
 
 .banner-content {
