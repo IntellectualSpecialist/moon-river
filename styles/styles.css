@@ -705,6 +705,7 @@ img {
   width: 53px;
   height: 34px;
   border: none;
+  border-radius: inherit;
   background-color: transparent;
   background-image: url("../images/slider-next.svg");
   background-repeat: no-repeat;
@@ -1231,6 +1232,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   min-height: 208px;
   font-weight: 400;
   letter-spacing: 1.08px;
