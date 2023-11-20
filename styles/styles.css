@@ -589,6 +589,7 @@ img {
 
 .product-card {
   position: relative;
+  background-color: #ededed;
 }
 
 .product-card-img {
@@ -599,6 +600,10 @@ img {
   position: absolute;
   bottom: 20px;
   left: 30px;
+}
+
+.light-theme {
+  background-color: #272727;
 }
 
 .light-theme .product-card-title {
