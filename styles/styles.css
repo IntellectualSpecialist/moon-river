@@ -98,7 +98,7 @@ img {
 
 .main-header,
 .hero {
-  background-image: linear-gradient(to right, transparent, transparent 58%, #272727 58%, #272727);
+  background-image: linear-gradient(90deg, transparent, transparent 58%, #272727 58%, #272727);
 }
 
 .main-header {
@@ -251,7 +251,6 @@ img {
 .hero .container-center {
   display: grid;
   grid-template-columns: 475px 547px;
-  grid-template-rows: 1fr;
   column-gap: 94px;
   min-height: 537px;
 }
@@ -359,6 +358,7 @@ img {
 
 .language-menu {
   display: flex;
+  align-self: end;
   gap: 10px;
   margin: 0;
   padding: 0;
